@@ -1,6 +1,6 @@
 package com.dwanz.jetpack_practice.data.di
 
-import com.dwanz.jetpack_practice.data.PokemonRepository
+import com.dwanz.jetpack_practice.data.PokemonRepositoryImp
 import com.dwanz.jetpack_practice.data.source.remote.PokemonApi
 import com.dwanz.jetpack_practice.data.source.remote.PokemonRemoteDataSource
 import com.dwanz.jetpack_practice.util.Constants.Companion.BASE_URL
@@ -28,6 +28,6 @@ val DataModule = module {
     }
 
     factory  {
-        PokemonRepository(get())
+        PokemonRepositoryImp(get())
     }
 }
